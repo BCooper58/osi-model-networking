@@ -1,0 +1,10 @@
+ipv4:
+use of 32 bits
+some ip addresses are reserved for events such as maintenence of routing tables, multicast tables, or operation under failure modes
+three ranges of ips reserved for private networks
+class A networks reserved for loopback, no packets should appear outside the network
+
+Fragmentation: When a router receives a packet, it examines the destination address and determines the outgoing interface to use and that interface's MTU. 
+If the packet size is bigger than the MTU, and the Do not Fragment (DF) bit in the packet's header is set to 0, then the router may fragment the packet.
+
+Reassembly is when fragmented ids are read and the original data payload is read and wrote.
