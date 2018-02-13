@@ -1,0 +1,32 @@
+ipv6:
+Size of IP Addresses increased to 128 bits
+Simpler Autoconfig
+Simpler header format
+Labeling flow
+Multicast Addresses have added scope field
+Anycast addressing: Identifier for different nodes, packets usually sent to to closest address, indistinguishable from unicast
+
+Version. 4 bits.
+IPv6 version number.
+
+Traffic Class. 8 bits.
+Internet traffic priority delivery value.
+
+Flow Label. 20 bits.
+Used for specifying special router handling from source to destination(s) for a sequence of packets.
+
+Payload Length. 16 bits unsigned.
+Specifies the length of the data in the packet. When cleared to zero, the option is a hop-by-hop Jumbo payload.
+
+Next Header. 8 bits.
+Specifies the next encapsulated protocol. The values are compatible with those specified for the IPv4 protocol field.
+
+Hop Limit. 8 bits unsigned.
+For each router that forwards the packet, the hop limit is decremented by 1. When the hop limit field reaches zero, the packet is discarded. This replaces the TTL field in the IPv4 header that was originally intended to be used as a time based hop limit.
+
+Source address. 16 bytes.
+The IPv6 address of the sending node.
+
+Destination address. 16 bytes.
+The IPv6 address of the destination node.
+
